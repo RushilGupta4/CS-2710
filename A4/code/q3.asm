@@ -4,6 +4,8 @@ fibStr:     .asciiz "The Fibonacci number is: "
 errorStr:  .asciiz "Please enter a number >= 2"
 
 .text
+.globl main
+
 main:
     li   $v0, 4
     la   $a0, promptFib

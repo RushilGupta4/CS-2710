@@ -5,6 +5,8 @@ error_msg:  .asciiz "Please enter a positive number"
 gcdStr:     .asciiz "The GCD is: "
 
 .text
+.globl main
+
 main:
     # $v0 = 4 is for printing a string, here we ask the user for the first integer
     li   $v0, 4

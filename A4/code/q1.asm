@@ -3,6 +3,8 @@ prompt:      .asciiz "Enter a positive integer (<1000): "
 resultStr:   .asciiz "The Sum (S) is equal to: "
 
 .text
+.globl main
+
 main:
     # Print prompt message
     li   $v0, 4
