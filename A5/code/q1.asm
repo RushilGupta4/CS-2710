@@ -21,10 +21,10 @@ main:
 
 
 sub_loop:
-    slti $t2, $t0, 9
-    bne $t2, $zero, sub_done
-    addi $t0, $t0, -9
-    addi $t1, $t1, 1
+    slti $t2, $t0, 9 # Check if s < 9
+    bne $t2, $zero, sub_done # If s < 9, then we are done
+    addi $t0, $t0, -9 # Subtract 9 from s
+    addi $t1, $t1, 1 # Increment result
     j sub_loop
 
 sub_done:
